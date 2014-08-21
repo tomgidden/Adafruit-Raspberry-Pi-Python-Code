@@ -9,6 +9,12 @@ from Adafruit_7Segment import SevenSegment
 # ===========================================================================
 segment = SevenSegment(address=0x70)
 
+# Set segment.invert = True if unit is upside-down
+segment.invert = False
+
+# Set brightness between 0 (off) and 15 (full) if you value your retinae
+segment.disp.setBrightness(1)
+
 print "Press CTRL+Z to exit"
 
 # Continually update the time on a 4 char, 7-segment display
